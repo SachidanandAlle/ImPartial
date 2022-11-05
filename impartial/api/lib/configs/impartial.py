@@ -71,6 +71,7 @@ class Impartial(TaskConfig):
             labels=self.labels,
             iconfig=self.iconfig,
             description="Train ImPartial model",
+            disable_tracking=True,
             config={
                 "max_epochs": self.iconfig.EPOCHS,
                 "train_batch_size": self.iconfig.BATCH_SIZE,
